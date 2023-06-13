@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "Best School" > \*\\'"Best School"\'\\*$\?\*\*\*\*\*:)
+7-file='\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)'
+echo "Best School" > "$7-file"
+echo "File '$7-file' created."
