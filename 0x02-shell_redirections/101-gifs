@@ -1,2 +1,15 @@
 #!/bin/bash
-find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d '.'
+
+search_directory=$(pwd)
+
+function list_files_with_extension() {
+    local directory="$1"
+    local extension="$2"
+    
+    # Find all .gif files in the given directory and its sub-directories
+    find "$directory" -type f -name "*.$extension" -print
+}
+
+# Call the function to list .gif files
+list_files_with_extension "$search_directory" "gif"
+
