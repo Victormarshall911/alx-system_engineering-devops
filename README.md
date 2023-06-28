@@ -1,1 +1,1 @@
-Shell basic readme
+This is my shell permissions
